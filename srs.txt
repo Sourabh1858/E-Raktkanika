@@ -1,0 +1,129 @@
+# E-Raktkanika
+
+## Document:
+System Requirement Specification Document
+
+## Title:
+System Reqruiement Spefication for E-Raktkanika
+
+## Team: 
+
+
+## Objective (Purpose):
+The online shopping System for products Web Applictaion is intended to  provide complete solution for vendors, 
+Consumers as well as internal users (Staff) through  a single Gateway using internet. 
+It will enable vendors to setp up online shops, customers to browse through virtual shop and purchase products online without visiting the shop physically.
+
+## Scope:
+This System allows Shoppers to maintain thier products for adding or removing from catalog based on their availablity.
+Customer will be able to  review orders history and may able to cancel order within 24 hours,order place.
+The System  will be able to show live Bussion Operation statistics trends through Customized dashboard for stakeholders.
+
+## Definitions:
+
+
+## Functional Requirements:
+	Any anonymous user(individual or hosiptal) can search for the required quantity and type of blood using E-Raktkanika portal.
+	* Individual user:- After visiting the E-Raktkainka portal user will have the option to search for the blood.On the same page,user would also be able to see 
+the complete info about Blood Camp that will be organised in the coming days.If user wish to continue the search for blood, he/she would be filling a simple form.
+This form will collect the information about user's Name,Age,Location,Contact No. , Blood group criteria and max. waiting time limit (in no.of days/hours).
+After proceeding further, user would see a blood bank directory. As per need, the user can apply different search criterias like 
+(On basis of location of blood bank, on basis of required blood type). This blood bank directory will also have contact details of repective blood banks.
+User can then contact a particular blood bank to get the desired quantity of required blood type.
+
+	*Hospitals:- If any kind of hospital need to use E-Raktkainka portal then they first need to be registered on the portal if not done already.
+But the Hospitals that are already registered, can directly use their login credentials.Unregistered hospitals will be first asked to fill a form which will 
+collect legal as well as available facilities info about that hospital. After this step, background verfication/Cross check of the filled info will be done by admin team.
+That hospital will be registered on the portal once the verification is done and they will be given a particular ID and password for future use.  
+All the registered hospitals can access blood bank directory to search for required quantity and type of blood, (they can also apply filtering criterias like location,
+name of blood bank and blood type to that directory).Just like individual user, hospitals can also contact the blood banks.
+	In case if a particular blood group is not available (which is not required urgently), hospitals can post a request by setting a dealine for that requirement.
+ This requirement will be visible to all the blood banks present in directory so that they can contact that particular hospital when blood group is available. Also,the 
+hospitals can see the info about blood donation camps that will be organised in the coming days.
+
+	Next important part of the E-Raktkanika portal are Blood banks.Unregistered blood banks would also be first required to register on the portal.For 
+completing this task, they need to fill a detailed form. After this, the Blood banks will be verified with filled info and supporting documents by admin team.
+Once verified,blood banks will be given login credentials for future use. Blood banks could also see the deailed info of the Blood donation camp that will be organised
+in the coming days.Blood banks play a very important role as they can accept or decline 'Blood requirement' requests made by users (either individual or hospital).
+As mentioned earlier, blood banks can also see the important but not urgent requirements posted by hospitals.So, accordingly Blood banks can take decision on how to
+act upon these requests.
+	Blood banks will have the feature to maintain their current blood reserves stocks on the portal. They can mainatain this stock by timely modifying or updating the info about
+type of blood group, available quantity of that blood gorup,contact details etc.Apart from this, Blood banks can also take a call on whether to accept or reject the 
+collaboration requests made by any organisation or any particular person for arranging the blood donation camps.
+	
+	Any NGO or any Organisation or any particular individual who wish to organize a Blood donation camp can use E-Raktkanika portal.Such party will have a option to 
+arrange camps.For this, the intereseted party will first see a blood bank directory containing all the details about blood banks and this party can also apply filtering criteria
+(on basis of location, on basis of name of blood bank) on the blood bank directory.After selection of required blood bank, the party would be filling all the info like
+name of that party,planned date of blood camp, location of blood camp...in the form.This info will be sent to that respective Blood bank for approval.Once approved, now the
+repective party can arrange the Blood donation camp by allying with the respective blood bank.
+
+	*Admin - Admin will actively be monitoring the portal to ensure smooth and flawless working. Also, admin will be doing the background verification of newly 
+registred blood banks and hospitals. 
+
+
+
+	 
+
+
+## NonFunctional Requirement:
+
+### Security
+Only Registered Blood Banks and Hospitals will be allowed to access their functionality after logging in.	
+Each stakeholder will be to access system  through authentication process. Who are you ?
+System will provide access to  the content , operations using Role based security (Authorization) (Permissions based on Role)
+Using SSL in all transactions  which will be performed stakeholder. It would protect confidential information shared by system to stake holder of Shared by stakeholder to system.
+System will automatically log of  all stakeholder after some time due to inactiveness.
+System will block operations for inactive  stakeholder and would redirect for authentication.
+System  will internally maintain secure communiction channel between Servers ( Web Servers, App Servers, databse Server)
+Sensitive data will be always encrypted across communcation.
+User proper firewall to protect servers from out side fishing, velnerable attacks.
+
+
+### Reliability
+The system will backup business data on regular basis and recover in short time duration to keep system operational
+Continous updates are matained , continous Adminstration is done to keep system operational.
+During peak hours system will maintain same user experaince by managing load balacning .
+
+### Availability
+uptime:   24* 7  available  99.999%
+	
+### Maintainability:
+A Commercial database software will be used to maintain System data Persistence.
+A readymade Web Server will be installed to host online shopping portal (Web Site) to management server capabilities.
+IT operations team will easily monitor and configure System using Adminstrative tools provided by Servers.
+Separate enviornment will be maintained for system for isolation in  production, testing, and development.
+
+### Portablility:
+PDA: Portable Device Application
+System will provide portable User Interface ( HTML, CSS, JS) through  users will be able to access online shopping portal.
+System can be deployed to single server, multi server, to any OS, Cloud (Azure or AWS or GCP)
+
+### Accessibility:
+only registered customer will be able to place an order after authentication.
+Sales team can reject or approve  orders, shopper requests  based on role  provided.
+BOD team will be able to view daily, weekly, monthly, annual businss Growth throgh customized dashboard.
+Shoppers will be able to see their product sale graph
+
+### Durability:
+System will retain customer  shopping cart for 15 minutes  even though customer loose internet connection and join again.
+System will maintain wishlist for customer . customer  will be able to add products from wishlist  and add to shopping cart whenever needed.
+System will implement backup and recovery for retaining stake holders data, bussiness operation data and business data over time.
+
+### Efficiency:
+on Festival season, maximum number of users  will place order, view products  with same response time.
+System will be able to manage all transactions with isolation.
+
+### Modularity:
+System will designed and developed using reusable, independent or dependent business senarios in the form of modules.
+These modules will be loosely coupled and highly cohesive.
+System will contain CRM , Inventory , shopping cart, order processing, payment processing, Delivery module, membership and Roles managment  modules.
+	
+### Scalability:
+System will be able  to  provide  consistent user exeprience to stake holder as well as vistors irrespective of load.
+
+### Safety:	
+online shopping portal will be secure from malicious attack, fishing.
+online shoppping portal functionalilites are protected from outside with prper firewall configuration.
+online shopping portal will be always kept updated with latest anit virus software.
+Bussiness data will be backed up periodically to ensure safty of data using increamental back up strategy.
+Role based security will be applied for Application data and operations accessibility.
